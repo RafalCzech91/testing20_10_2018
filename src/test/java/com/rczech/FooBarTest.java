@@ -9,7 +9,8 @@ public class FooBarTest {
     public static final String EXPECTED_REPRESENTATION = "1";
     public static final int NUMBER = 1;
     public static final int DIVIDABLE_BY_THREE = 3;
-    public static final int NUMBER1 = 15;
+    public static final int DIVIDABLE_BY_FIFTEEN = 15;
+    public static final int NUMBER1 = DIVIDABLE_BY_FIFTEEN;
     public static final int DIVIDABLE_BY_FIVE = NUMBER1;
     private FooBar fooBar;
 
@@ -55,9 +56,9 @@ public class FooBarTest {
     @Test
     public void sholudshouldReturnStringBarWhenIntIsDividableBtFifteen() {
         //given
-        int number = 15;
+        int number = DIVIDABLE_BY_FIFTEEN;
         //when
-        String result = fooBar.convertToString(15);
+        String result = fooBar.convertToString(DIVIDABLE_BY_FIFTEEN);
         //then
         Assert.assertEquals("FooBar", result);
     }
