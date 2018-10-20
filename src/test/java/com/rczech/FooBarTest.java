@@ -43,9 +43,9 @@ public class FooBarTest {
     @Test
     public void shouldReturnStringBarWhenIntIsDividableBtFive() {
         //given
-        int number = 15;
+        int number = 5;
         //when
-        String result = fooBar.convertToString(15);
+        String result = fooBar.convertToString(5);
         //then
         Assert.assertEquals("Bar", result);
     }
