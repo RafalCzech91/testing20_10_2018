@@ -1,7 +1,7 @@
 package com.rczech;
 
 public class FooBar {
-    public convertToString(x) {
-        return;
+    public  String convertToString(int x) {
+        return String.valueOf(x);
     }
 }

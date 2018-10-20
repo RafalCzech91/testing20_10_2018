@@ -1,5 +1,6 @@
 package com.rczech.foobar;
 
+import com.rczech.FooBar;
 import org.junit.Assert;
 import org.junit.Test;
 
