@@ -10,8 +10,8 @@ public class FooBarTest {
     public static final int NUMBER = 1;
     public static final int DIVIDABLE_BY_THREE = 3;
     public static final int DIVIDABLE_BY_FIFTEEN = 15;
-    public static final int NUMBER1 = DIVIDABLE_BY_FIFTEEN;
-    public static final int DIVIDABLE_BY_FIVE = NUMBER1;
+
+    public static final int DIVIDABLE_BY_FIVE = 5;
     private FooBar fooBar;
 
     @Before
