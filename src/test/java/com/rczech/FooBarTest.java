@@ -18,6 +18,7 @@ public class FooBarTest {
        String result = new FooBar().convertToString(NUMBER);
 
 
+
         //then
         Assert.assertEquals(EXPECTED_REPRESENTATION,result);
 
