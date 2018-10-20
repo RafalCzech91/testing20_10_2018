@@ -9,6 +9,8 @@ public class FooBarTest {
     public static final String EXPECTED_REPRESENTATION = "1";
     public static final int NUMBER = 1;
     public static final int DIVIDABLE_BY_THREE = 3;
+    public static final int NUMBER1 = 15;
+    public static final int DIVIDABLE_BY_FIVE = NUMBER1;
     private FooBar fooBar;
 
     @Before
@@ -43,11 +45,21 @@ public class FooBarTest {
     @Test
     public void shouldReturnStringBarWhenIntIsDividableBtFive() {
         //given
-        int number = 5;
+        int number = DIVIDABLE_BY_FIVE;
         //when
-        String result = fooBar.convertToString(5);
+        String result = fooBar.convertToString(DIVIDABLE_BY_FIVE);
         //then
         Assert.assertEquals("Bar", result);
+    }
+
+    @Test
+    public void sholudshouldReturnStringBarWhenIntIsDividableBtFifteen() {
+        //given
+        int number = 15;
+        //when
+        String result = fooBar.convertToString(15);
+        //then
+        Assert.assertEquals("FooBar", result);
     }
 }
 
